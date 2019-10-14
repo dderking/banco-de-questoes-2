@@ -1,0 +1,9 @@
+from ca2 import caixa_alta
+
+frase = input()
+nova = caixa_alta(frase)
+
+with open('impressao.txt', 'w') as arq:
+    arq.write(nova)
+
+print(nova)
